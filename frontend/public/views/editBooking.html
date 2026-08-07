@@ -1,0 +1,28 @@
+<div class="container booking-container">
+  <h2>Edit Booking</h2>
+  <form ng-submit="updateBooking()">
+    <label>Name:</label>
+    <input type="text" ng-model="booking.name" required>
+
+    <label>Email:</label>
+    <input type="email" ng-model="booking.email" required>
+
+    <label>Car Type:</label>
+    <select ng-model="booking.carType" ng-options="type for type in carTypes" ng-change="updateCarModels()" required>
+      <option value="">Select Car Type</option>
+    </select>
+
+    <label>Car Model:</label>
+    <select ng-model="booking.carModel" ng-options="model for model in availableModels" required>
+      <option value="">Select Car Model</option>
+    </select>
+
+    <label>Start Date:</label>
+    <input type="date" ng-model="booking.startDate" required>
+
+    <label>End Date:</label>
+    <input type="date" ng-model="booking.endDate" required>
+
+    <button type="submit">Update Booking</button>
+  </form>
+</div>

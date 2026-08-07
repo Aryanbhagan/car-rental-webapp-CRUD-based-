@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="carRentalApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Car Rental</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- AngularJS Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <!-- App Files -->
+  <script src="app.js"></script>
+  <script src="routes.js"></script>
+  <script src="services.js"></script>
+  <script src="controllers/homeController.js"></script>
+  <script src="controllers/bookingController.js"></script>
+  <script src="controllers/bookingListController.js"></script>
+  <script src="controllers/editBookingController.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="#!/">Home</a>
+    <a href="#!/booking">Book a Car</a>
+    <a href="#!/bookings">View Bookings</a>
+  </nav>
+  <div ng-view></div>
+</body>
+</html>

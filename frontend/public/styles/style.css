@@ -1,0 +1,286 @@
+/* Import a luxurious font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+}
+
+/* Body background with a subtle gradient for a luxurious feel */
+body {
+  background: linear-gradient(135deg, #f2e3d5, #d8c3a5);
+  color: #333;
+}
+
+/* Navigation styling */
+nav {
+  background: #1d1d1d;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  color: #f4f4f4;
+  font-size: 18px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #cfa671;
+}
+
+/* General container for content pages */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page - Center aligned content */
+.home-container {
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+}
+
+.home-container p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.home-container .btn {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+}
+
+/* Booking Form Styling */
+.booking-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1d1d1d;
+}
+
+.booking-container input,
+.booking-container select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling for both forms and general actions */
+.btn, button {
+  background: linear-gradient(135deg, #cfa671, #a67c52);
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  background: linear-gradient(135deg, #a67c52, #cfa671);
+}
+
+/* Table styling for the bookings list */
+.bookings-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bookings-container th, .bookings-container td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.bookings-container th {
+  background: #1d1d1d;
+  color: #fff;
+  font-size: 16px;
+}
+
+.bookings-container tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+  
+  nav a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+  }
+  
+  .home-container p {
+    font-size: 1rem;
+  }
+  
+  .btn, button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+/* ---------------------- */
+/* Booking Form Styling   */
+/* ---------------------- */
+
+/* Wrap the form in a refined container */
+.booking-container {
+  text-align: center;  /* Center align the header and any text */
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+/* Style the form itself */
+.booking-container form {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  margin: 20px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style the form header if needed */
+.booking-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+}
+
+/* Form labels */
+.booking-container label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Input and select fields */
+.booking-container input,
+.booking-container select {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input and select focus states */
+.booking-container input:focus,
+.booking-container select:focus {
+  outline: none;
+  border-color: #a67c52;
+  box-shadow: 0 0 5px rgba(166, 124, 82, 0.5);
+}
+
+/* Submit button styling */
+.booking-container button,
+.booking-container .btn {
+  background: linear-gradient(135deg, #cfa671, #a67c52);
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+/* Button hover effect */
+.booking-container button:hover,
+.booking-container .btn:hover {
+  background: linear-gradient(135deg, #a67c52, #cfa671);
+  transform: translateY(-2px);
+}
+/* Updated Booking Form Container Styling */
+.booking-container {
+  text-align: center;
+  margin: 40px auto;    /* Reduced vertical margins */
+  max-width: 400px;     /* Smaller overall container width */
+}
+
+/* Updated Form Styling within the Booking Container */
+.booking-container form {
+  background: rgba(255, 255, 255, 0.85); /* Slightly translucent white to blend with the gradient background */
+  border: 1px solid #d8c3a5;             /* Border color matching the lighter end of your background gradient */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;   /* Reduced padding for a more compact form */
+  margin: 10px auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* Updated Compact Booking Form Styling */
+.booking-container {
+  text-align: center;
+  margin: 30px auto;    /* Reduced vertical margins */
+  max-width: 400px;     /* Keeps container small */
+}
+
+.booking-container form {
+  /* Use a warm cream background matching the gradient theme */
+  background: rgba(242, 227, 213, 0.9);
+  border: 1px solid #d8c3a5; /* Subtle border in a matching color */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;   /* Reduced padding for a more compact look */
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;           /* Less vertical gap between form elements */
+}
+.assignment-info {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #d8c3a5;
+  font-size: 1rem;
+  color: #1d1d1d;
+  text-align: center;
+}
+.assignment-info{
+  max-inline-size: 0cqh;
+}

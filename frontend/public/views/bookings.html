@@ -1,0 +1,31 @@
+<div class="bookings-container">
+  <h2>All Bookings</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Car Type</th>
+        <th>Car Model</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="booking in bookings">
+        <td>{{ booking.name }}</td>
+        <td>{{ booking.email }}</td>
+        <td>{{ booking.carType }}</td>
+        <td>{{ booking.carModel }}</td>
+        <td>{{ booking.startDate | date:'shortDate' }}</td>
+        <td>{{ booking.endDate | date:'shortDate' }}</td>
+        <td>
+          <button ng-click="editBooking(booking._id)">Edit</button>
+          <button ng-click="deleteBooking(booking._id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p ng-if="error">{{ error }}</p>
+</div>
